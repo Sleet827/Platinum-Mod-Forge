@@ -18,9 +18,9 @@ public class OreGeneration {
     public static void generateOres(final BiomeLoadingEvent event) {
         if (!(event.getCategory().equals(Biome.BiomeCategory.NETHER) || event.getCategory().equals(Biome.BiomeCategory.THEEND))) {
             generateOre(event.getGeneration(), OreConfiguration.Predicates.NATURAL_STONE,
-                    ModBlocks.PLATINUM_ORE.get().defaultBlockState(), 5, 15, 30, 10);
+                    ModBlocks.PLATINUM_ORE.get().defaultBlockState(), 1, 5, 10, 1);
             generateOre(event.getGeneration(), OreConfiguration.Predicates.DEEPSLATE_ORE_REPLACEABLES,
-                    ModBlocks.DEEPSLATE_PLATINUM_ORE.get().defaultBlockState(), 5, 15, 30, 10);
+                    ModBlocks.DEEPSLATE_PLATINUM_ORE.get().defaultBlockState(), 1, 5, 10, 1);
         }
     }
 

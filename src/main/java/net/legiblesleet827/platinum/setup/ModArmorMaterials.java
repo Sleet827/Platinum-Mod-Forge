@@ -11,7 +11,7 @@ import net.minecraft.world.level.ItemLike;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    PLATINUM("platinum", 40, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GENERIC, 5.0F, 0.2F, () -> {
+    PLATINUM("platinum", 40, new int[]{5, 8, 10, 5}, 15, SoundEvents.ARMOR_EQUIP_GENERIC, 5.0F, 0.2F, () -> {
         return Ingredient.of(new ItemLike[]{ModItems.PLATINUM_INGOT.get()});
     });
 
