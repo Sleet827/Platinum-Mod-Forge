@@ -30,6 +30,7 @@ e4fd69703376f6d57ff9445be532a3c78f4fa398 assets/platinum/models/item/platinum_sw
 7ef31578c993db47cd91e82bcb1f4596c9b809a6 data/forge/tags/items/ores/platinum.json
 0edcca8650257e68e75060eba75bab631e0f6aff data/forge/tags/items/storage_blocks.json
 9f693e80eed4c289b7d5b8e860d0a0d1c8aa4174 data/forge/tags/items/storage_blocks/platinum.json
+60528528faa0944d30e23f0f064f3754f43902b8 data/minecraft/tags/blocks/mineable/pickaxe.json
 7eb4c2866bc54c7a735c952912f9348bc0d8b6dc data/platinum/advancements/recipes/platinum_tab/platinum_axe.json
 a140107206b57f0e73ed7d637d610f1c5c0ff120 data/platinum/advancements/recipes/platinum_tab/platinum_block.json
 b188fc0a067c610117af9f090e8f98efa15fa2b1 data/platinum/advancements/recipes/platinum_tab/platinum_boots.json
@@ -67,3 +68,5 @@ dadcdcd0ebef1de165752ec864e20424c1411598 data/platinum/recipes/platinum_nugget.j
 65f1ae65b2d012a62b1ee192b32b3057eb3021e4 data/platinum/recipes/platinum_pickaxe.json
 abf65784f6479696d6b4573be079e80c0b74e1a5 data/platinum/recipes/platinum_shovel.json
 3845bf73cb0b8c42738583eb0c8aa4c2134907a7 data/platinum/recipes/platinum_sword.json
+26c48d8d7bb47d62976d700f14693e48c1eaba74 data/platinum/tags/blocks/platinum_ores.json
+26c48d8d7bb47d62976d700f14693e48c1eaba74 data/platinum/tags/items/platinum_ores.json
