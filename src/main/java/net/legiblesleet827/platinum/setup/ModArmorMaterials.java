@@ -11,7 +11,7 @@ import net.minecraft.world.level.ItemLike;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    PLATINUM("platinum", 40, new int[]{5, 8, 10, 5}, 15, SoundEvents.ARMOR_EQUIP_GENERIC, 5.0F, 0.2F, () -> {
+    PLATINUM("platinum", 40, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GENERIC, 5.0F, 0.2F, () -> {
         return Ingredient.of(new ItemLike[]{ModItems.PLATINUM_INGOT.get()});
     });
 
@@ -36,12 +36,12 @@ public enum ModArmorMaterials implements ArmorMaterial {
         this.repairIngredient = new LazyLoadedValue(repairIngredient);
     }
 
-    public int getDurabilityForSlot(EquipmentSlot p_40484_) {
-        return HEALTH_PER_SLOT[p_40484_.getIndex()] * this.durabilityMultiplier;
+    public int getDurabilityForSlot(EquipmentSlot equipmentSlot) {
+        return HEALTH_PER_SLOT[equipmentSlot.getIndex()] * this.durabilityMultiplier;
     }
 
-    public int getDefenseForSlot(EquipmentSlot p_40487_) {
-        return this.slotProtections[p_40487_.getIndex()];
+    public int getDefenseForSlot(EquipmentSlot equipmentSlot) {
+        return this.slotProtections[equipmentSlot.getIndex()];
     }
 
     public int getEnchantmentValue() {
