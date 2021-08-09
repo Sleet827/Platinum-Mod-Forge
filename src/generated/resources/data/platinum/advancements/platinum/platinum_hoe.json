@@ -1,4 +1,5 @@
 {
+  "parent": "platinum:platinum/root",
   "display": {
     "icon": {
       "item": "platinum:platinum_hoe",

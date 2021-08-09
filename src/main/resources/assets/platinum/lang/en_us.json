@@ -13,5 +13,11 @@
   "block.platinum.platinum_ore": "Platinum Ore",
   "block.platinum.platinum_block": "Platinum Block",
   "block.platinum.deepslate_platinum_block": "Platinum Block",
-  "itemGroup.platinum_tab": "Platinum Mod"
+  "advancements.platinum.root.title": "A shiny ingot!",
+  "advancements.platinum.root.description": "Get a platinum ingot",
+  "advancements.platinum.platinum_hoe.title": "Extreme Dedication",
+  "advancements.platinum.platinum_hoe.description": "Get a platinum hoe",
+  "advancements.platinum.platinum_armor.title": "The shiny armor",
+  "advancements.platinum.platinum_armor.title": "Get a full set of platinum armor",
+  "itemGroup.platinum_tab": "Platinum Mod Tab"
 }
