@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 @Mod(PlatinumMod.MOD_ID)
 public class PlatinumMod {
     public static final String MOD_ID = "platinum";
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public PlatinumMod() {
         Registration.register();

@@ -1,6 +1,7 @@
 package net.legiblesleet827.platinum.data;
 
 import net.legiblesleet827.platinum.PlatinumMod;
+import net.legiblesleet827.platinum.data.advancements.ModAdvancementProvider;
 import net.legiblesleet827.platinum.data.client.ModBlockStateProvider;
 import net.legiblesleet827.platinum.data.client.ModItemModelProvider;
 import net.minecraft.data.DataGenerator;
@@ -27,5 +28,6 @@ public class DataGenerators {
 
         gen.addProvider(new ModLootTableProvider(gen));
         gen.addProvider(new ModRecipeProvider(gen));
+        gen.addProvider(new ModAdvancementProvider(gen));
     }
 }

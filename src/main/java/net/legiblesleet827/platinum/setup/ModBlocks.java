@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final RegistryObject<Block> PLATINUM_ORE = register("platinum_ore", () ->
             new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(100, 2400)
+                    .strength(100, 1200)
                     .harvestLevel(4)
                     .harvestTool(ToolType.PICKAXE)
                     .requiresCorrectToolForDrops()
@@ -25,7 +25,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_PLATINUM_ORE = register("deepslate_platinum_ore", () ->
             new OreBlock(BlockBehaviour.Properties.copy(PLATINUM_ORE.get())
                     .color(MaterialColor.DEEPSLATE)
-                    .strength(200, 4800)
+                    .strength(200, 2400)
                     .harvestLevel(4)
                     .harvestTool(ToolType.PICKAXE)
                     .requiresCorrectToolForDrops()
