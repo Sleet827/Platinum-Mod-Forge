@@ -9,7 +9,7 @@ import net.minecraft.world.level.ItemLike;
 import java.util.function.Supplier;
 
 public enum ModTiers implements Tier {
-    PLATINUM(4, 3000, 10.0F, 5.0F, 20, () -> {
+    PLATINUM(5, 3000, 10.0F, 5.0F, 20, () -> {
         return Ingredient.of(new ItemLike[]{ModItems.PLATINUM_INGOT.get()});
     });
 

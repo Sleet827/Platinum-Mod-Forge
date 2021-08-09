@@ -16,13 +16,17 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags() {
+        copy(ModTags.Blocks.PLATINUM_ORES, ModTags.Items.PLATINUM_ORES);
+
         copy(ModTags.Blocks.ORES_PLATINUM, ModTags.Items.ORES_PLATINUM);
         copy(Tags.Blocks.ORES, Tags.Items.ORES);
+
         copy(ModTags.Blocks.STORAGE_BLOCKS_PLATINUM, ModTags.Items.STORAGE_BLOCKS_PLATINUM);
         copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
 
         tag(ModTags.Items.INGOTS_PLATINUM).add(ModItems.PLATINUM_INGOT.get());
         tag(Tags.Items.INGOTS).addTag(ModTags.Items.INGOTS_PLATINUM);
+
         tag(ModTags.Items.NUGGETS_PLATINUM).add(ModItems.PLATINUM_NUGGET.get());
         tag(Tags.Items.NUGGETS).addTag(ModTags.Items.NUGGETS_PLATINUM);
     }
