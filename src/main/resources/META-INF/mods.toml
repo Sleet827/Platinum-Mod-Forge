@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="All rights reserved"
+[[mods]]
+    modId="platinum"
+    version="${file.jarVersion}"
+    displayName="Platinum Mod"
+    logoFile="logo.png"
+    authors="LegibleSleet827"
+    description='''
+    This mod adds platinum to minecraft
+    '''
+
+[[dependencies.platinum]]
+    modId="forge"
+    mandatory=true
+    versionRange="[37,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.platinum]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1,1.18)"
+    ordering="NONE"
+    side="BOTH"

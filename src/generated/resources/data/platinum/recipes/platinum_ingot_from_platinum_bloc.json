@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "platinum:platinum_block"
+    }
+  ],
+  "result": {
+    "item": "platinum:platinum_ingot",
+    "count": 9
+  }
+}
