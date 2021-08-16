@@ -8,7 +8,6 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fmllegacy.RegistryObject;
 
 import java.util.function.Supplier;
@@ -17,8 +16,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> PLATINUM_ORE = register("platinum_ore", () ->
             new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(100, 1200)
-                    .harvestLevel(4)
-                    .harvestTool(ToolType.PICKAXE)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 
@@ -26,13 +23,13 @@ public class ModBlocks {
             new OreBlock(BlockBehaviour.Properties.copy(PLATINUM_ORE.get())
                     .color(MaterialColor.DEEPSLATE)
                     .strength(200, 2400)
-                    .harvestLevel(4)
-                    .harvestTool(ToolType.PICKAXE)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.DEEPSLATE)));
 
     public static final RegistryObject<Block> PLATINUM_BLOCK = register("platinum_block", () ->
-            new Block(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL)));
+            new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(100, 1200)
+                    .sound(SoundType.METAL)));
 
     static void register() {}
 

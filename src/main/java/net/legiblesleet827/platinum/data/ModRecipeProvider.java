@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableList;
 import net.legiblesleet827.platinum.PlatinumMod;
 import net.legiblesleet827.platinum.setup.ModBlocks;
 import net.legiblesleet827.platinum.setup.ModItems;
+import net.legiblesleet827.platinum.setup.ModTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
@@ -24,27 +25,27 @@ public class ModRecipeProvider extends RecipeProvider {
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
         ShapedRecipeBuilder.shaped(ModItems.PLATINUM_INGOT.get())
-                .define('.', ModItems.PLATINUM_NUGGET.get())
+                .define('.', ModTags.Items.NUGGETS_PLATINUM)
                 .pattern("...")
                 .pattern("...")
                 .pattern("...")
-                .unlockedBy("has_platinum_nugget", has(ModItems.PLATINUM_NUGGET.get()))
+                .unlockedBy("has_platinum_nugget", has(ModTags.Items.NUGGETS_PLATINUM))
                 .save(consumer, modId("platinum_ingot_from_platinum_nuggets"));
         ShapedRecipeBuilder.shaped(ModBlocks.PLATINUM_BLOCK.get())
-                .define('#', ModItems.PLATINUM_INGOT.get())
+                .define('#', ModTags.Items.INGOTS_PLATINUM)
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
-                .unlockedBy("has_platinum_ingot", has(ModItems.PLATINUM_INGOT.get()))
+                .unlockedBy("has_platinum_ingot", has(ModTags.Items.INGOTS_PLATINUM))
                 .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(ModItems.PLATINUM_NUGGET.get(), 9)
-                .requires(ModItems.PLATINUM_INGOT.get())
-                .unlockedBy("has_platinum_nugget", has(ModItems.PLATINUM_NUGGET.get()))
+                .requires(ModTags.Items.INGOTS_PLATINUM)
+                .unlockedBy("has_platinum_nugget", has(ModTags.Items.INGOTS_PLATINUM))
                 .save(consumer);
         ShapelessRecipeBuilder.shapeless(ModItems.PLATINUM_INGOT.get(), 9)
-                .requires(ModBlocks.PLATINUM_BLOCK.get())
-                .unlockedBy("has_platinum_ingot", has(ModItems.PLATINUM_INGOT.get()))
+                .requires(ModTags.Items.STORAGE_BLOCKS_PLATINUM)
+                .unlockedBy("has_platinum_ingot", has(ModTags.Items.INGOTS_PLATINUM))
                 .save(consumer, modId("platinum_ingot_from_platinum_bloc"));
 
         for (ItemLike itemLike : PLATINUM_SMELTABLES) {

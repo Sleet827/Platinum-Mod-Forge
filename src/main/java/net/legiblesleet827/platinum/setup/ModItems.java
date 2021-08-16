@@ -28,6 +28,5 @@ public class ModItems {
     public static final RegistryObject<Item> PLATINUM_BOOTS = Registration.ITEMS.register("platinum_boots", () ->
             new ArmorItem(ModArmorMaterials.PLATINUM, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.PLATINUM_TAB)));
 
-    static void register() {
-    }
+    static void register() {}
 }

@@ -16,14 +16,13 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags() {
-        tag(ModTags.Blocks.PLATINUM_ORES).add(ModBlocks.PLATINUM_ORE.get()).add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get());
-
-        tag(BlockTags.MINEABLE_WITH_PICKAXE).addTags(ModTags.Blocks.PLATINUM_ORES);
-
         tag(ModTags.Blocks.ORES_PLATINUM).add(ModBlocks.PLATINUM_ORE.get());
         tag(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_PLATINUM);
 
         tag(ModTags.Blocks.STORAGE_BLOCKS_PLATINUM).add(ModBlocks.PLATINUM_BLOCK.get());
         tag(Tags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_PLATINUM);
+
+        tag(BlockTags.MINEABLE_WITH_PICKAXE).addTags(ModTags.Blocks.ORES_PLATINUM).addTags(ModTags.Blocks.STORAGE_BLOCKS_PLATINUM);
+        tag(Tags.Blocks.NEEDS_NETHERITE_TOOL).addTags(ModTags.Blocks.ORES_PLATINUM).addTags(ModTags.Blocks.STORAGE_BLOCKS_PLATINUM);
     }
 }
