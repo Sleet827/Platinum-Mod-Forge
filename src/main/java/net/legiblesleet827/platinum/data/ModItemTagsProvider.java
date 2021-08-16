@@ -16,8 +16,6 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags() {
-        copy(ModTags.Blocks.PLATINUM_ORES, ModTags.Items.PLATINUM_ORES);
-
         copy(ModTags.Blocks.ORES_PLATINUM, ModTags.Items.ORES_PLATINUM);
         copy(Tags.Blocks.ORES, Tags.Items.ORES);
 

@@ -25,7 +25,6 @@ public class ModTags {
     public static final class Items {
         public static final Tag.Named<Item> ORES_PLATINUM = forge("ores/platinum");
         public static final Tag.Named<Item> STORAGE_BLOCKS_PLATINUM = forge("storage_blocks/platinum");
-        public static final Tag.Named<Item> PLATINUM_ORES = mod("platinum_ores");
 
         public static final Tag.Named<Item> NUGGETS_PLATINUM = forge("nuggets/platinum");
         public static final Tag.Named<Item> INGOTS_PLATINUM = forge("ingots/platinum");
