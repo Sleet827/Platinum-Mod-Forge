@@ -18,7 +18,7 @@ b98aca4b6517cce99712c4d5736c89bc777980bf assets/platinum/models/item/platinum_or
 d04bc04997e3aa2f7373483dbd0afd2a0c03f6d6 assets/platinum/models/item/platinum_pickaxe.json
 e956ece4aedac3c39648d83b305daa353eb9d196 assets/platinum/models/item/platinum_shovel.json
 e4fd69703376f6d57ff9445be532a3c78f4fa398 assets/platinum/models/item/platinum_sword.json
-c8524489a3f181a51907ae58541b772970a4e497 data/forge/tags/blocks/needs_netherite_tool.json
+fa87db234b46750dfa1a14e606c1eceb2edf0b9c data/forge/tags/blocks/needs_netherite_tool.json
 3b8a22fd4586f78b45113810dc5554ba6c040a1d data/forge/tags/blocks/ores.json
 7ef31578c993db47cd91e82bcb1f4596c9b809a6 data/forge/tags/blocks/ores/platinum.json
 0edcca8650257e68e75060eba75bab631e0f6aff data/forge/tags/blocks/storage_blocks.json
@@ -31,7 +31,7 @@ c8524489a3f181a51907ae58541b772970a4e497 data/forge/tags/blocks/needs_netherite_
 7ef31578c993db47cd91e82bcb1f4596c9b809a6 data/forge/tags/items/ores/platinum.json
 0edcca8650257e68e75060eba75bab631e0f6aff data/forge/tags/items/storage_blocks.json
 9f693e80eed4c289b7d5b8e860d0a0d1c8aa4174 data/forge/tags/items/storage_blocks/platinum.json
-c8524489a3f181a51907ae58541b772970a4e497 data/minecraft/tags/blocks/mineable/pickaxe.json
+fa87db234b46750dfa1a14e606c1eceb2edf0b9c data/minecraft/tags/blocks/mineable/pickaxe.json
 4fed0ab32face9b846d79bb43cb3223969a5faef data/platinum/advancements/platinum/platinum_armor.json
 87547853731a206e2b61ebf4abb15eea75d294f6 data/platinum/advancements/platinum/platinum_hoe.json
 c51eb11596cdbbf146c48879e0d3ddee8906f589 data/platinum/advancements/platinum/root.json
