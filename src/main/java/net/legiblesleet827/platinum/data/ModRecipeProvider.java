@@ -30,6 +30,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("...")
                 .pattern("...")
                 .unlockedBy("has_platinum_nugget", has(ModTags.Items.NUGGETS_PLATINUM))
+                .group("platinum")
                 .save(consumer, modId("platinum_ingot_from_platinum_nuggets"));
         ShapedRecipeBuilder.shaped(ModBlocks.PLATINUM_BLOCK.get())
                 .define('#', ModTags.Items.INGOTS_PLATINUM)
@@ -37,23 +38,28 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("###")
                 .pattern("###")
                 .unlockedBy("has_platinum_ingot", has(ModTags.Items.INGOTS_PLATINUM))
+                .group("platinum")
                 .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(ModItems.PLATINUM_NUGGET.get(), 9)
                 .requires(ModTags.Items.INGOTS_PLATINUM)
                 .unlockedBy("has_platinum_nugget", has(ModTags.Items.INGOTS_PLATINUM))
+                .group("platinum")
                 .save(consumer);
         ShapelessRecipeBuilder.shapeless(ModItems.PLATINUM_INGOT.get(), 9)
                 .requires(ModTags.Items.STORAGE_BLOCKS_PLATINUM)
                 .unlockedBy("has_platinum_ingot", has(ModTags.Items.INGOTS_PLATINUM))
+                .group("platinum")
                 .save(consumer, modId("platinum_ingot_from_platinum_bloc"));
 
         for (ItemLike itemLike : PLATINUM_SMELTABLES) {
             SimpleCookingRecipeBuilder.smelting(Ingredient.of(itemLike), ModItems.PLATINUM_INGOT.get(), 1.0F, 200)
                     .unlockedBy("has_platinum_ore", has(itemLike))
+                    .group("platinum")
                     .save(consumer, modId("platinum_ingot_smelting" + "_" + ForgeRegistries.ITEMS.getKey(itemLike.asItem()).getPath()));
             SimpleCookingRecipeBuilder.blasting(Ingredient.of(itemLike), ModItems.PLATINUM_INGOT.get(), 1.0F, 100)
                     .unlockedBy("has_platinum_ore", has(itemLike))
+                    .group("platinum")
                     .save(consumer, modId("platinum_ingot_blasting" + "_" + ForgeRegistries.ITEMS.getKey(itemLike.asItem()).getPath()));
         }
 
