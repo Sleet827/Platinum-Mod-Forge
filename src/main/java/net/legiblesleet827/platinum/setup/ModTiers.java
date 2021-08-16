@@ -1,55 +1,22 @@
 package net.legiblesleet827.platinum.setup;
 
-import net.minecraft.util.LazyLoadedValue;
-import net.minecraft.world.item.Items;
+import net.legiblesleet827.platinum.PlatinumMod;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.ForgeTier;
+import net.minecraftforge.common.TierSortingRegistry;
 
-import java.util.function.Supplier;
+import java.util.List;
 
-public enum ModTiers implements Tier {
-    PLATINUM(5, 3000, 10.0F, 5.0F, 20, () -> {
-        return Ingredient.of(new ItemLike[]{ModItems.PLATINUM_INGOT.get()});
-    });
+public class ModTiers {
+    public static final Tier PLATINUM = TierSortingRegistry.registerTier(
+            new ForgeTier(5, 3000, 10.0F, 5.0F, 20, ModTags.Blocks.NEEDS_PLATINUM_TOOL, () -> Ingredient.of(new ItemLike[]{ModItems.PLATINUM_INGOT.get()})),
+            new ResourceLocation(PlatinumMod.MOD_ID, "platinum_tier"),
+            List.of(Tiers.NETHERITE), List.of());
 
-    private final int level;
-    private final int uses;
-    private final float speed;
-    private final float damage;
-    private final int enchantmentValue;
-    private final LazyLoadedValue<Ingredient> repairIngredient;
-
-    private ModTiers(int level, int uses, float speed, float damage, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
-        this.level = level;
-        this.uses = uses;
-        this.speed = speed;
-        this.damage = damage;
-        this.enchantmentValue = enchantmentValue;
-        this.repairIngredient = new LazyLoadedValue(repairIngredient);
-    }
-
-    public int getUses() {
-        return this.uses;
-    }
-
-    public float getSpeed() {
-        return this.speed;
-    }
-
-    public float getAttackDamageBonus() {
-        return this.damage;
-    }
-
-    public int getLevel() {
-        return this.level;
-    }
-
-    public int getEnchantmentValue() {
-        return this.enchantmentValue;
-    }
-
-    public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+    static void register() {
     }
 }

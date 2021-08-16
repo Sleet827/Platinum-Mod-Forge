@@ -12,6 +12,7 @@ public class ModTags {
     public static final class Blocks {
         public static final Tag.Named<Block> ORES_PLATINUM = forge("ores/platinum");
         public static final Tag.Named<Block> STORAGE_BLOCKS_PLATINUM = forge("storage_blocks/platinum");
+        public static final Tag.Named<Block> NEEDS_PLATINUM_TOOL = mod("needs_platinum_tool");
 
         private static Tag.Named<Block> forge(String path) {
             return BlockTags.bind(new ResourceLocation("forge", path).toString());
