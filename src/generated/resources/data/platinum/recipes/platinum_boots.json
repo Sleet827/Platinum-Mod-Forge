@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "addition": {
+    "item": "platinum:platinum_ingot"
+  },
+  "result": {
+    "item": "platinum:platinum_boots"
+  }
+}
