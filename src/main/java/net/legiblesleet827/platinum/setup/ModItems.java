@@ -9,6 +9,10 @@ public class ModItems {
             new Item(new Item.Properties().tab(ModCreativeModeTab.PLATINUM_TAB)));
     public static final RegistryObject<Item> PLATINUM_INGOT = Registration.ITEMS.register("platinum_ingot", () ->
             new Item(new Item.Properties().tab(ModCreativeModeTab.PLATINUM_TAB)));
+    public static final RegistryObject<Item> RAW_PLATINUM_NUGGET = Registration.ITEMS.register("raw_platinum_nugget", () ->
+            new Item(new Item.Properties().tab(ModCreativeModeTab.PLATINUM_TAB)));
+    public static final RegistryObject<Item> RAW_PLATINUM_INGOT = Registration.ITEMS.register("raw_platinum_ingot", () ->
+            new Item(new Item.Properties().tab(ModCreativeModeTab.PLATINUM_TAB)));
     public static final RegistryObject<Item> PLATINUM_SWORD = Registration.ITEMS.register("platinum_sword", () ->
             new SwordItem(ModTiers.PLATINUM, 3, -2.4F, new Item.Properties().tab(ModCreativeModeTab.PLATINUM_TAB)));
     public static final RegistryObject<Item> PLATINUM_SHOVEL = Registration.ITEMS.register("platinum_shovel", () ->

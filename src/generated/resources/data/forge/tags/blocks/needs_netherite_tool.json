@@ -3,6 +3,7 @@
   "values": [
     "#forge:ores/platinum",
     "platinum:deepslate_platinum_ore",
-    "#forge:storage_blocks/platinum"
+    "#forge:storage_blocks/platinum",
+    "platinum:raw_platinum_block"
   ]
 }

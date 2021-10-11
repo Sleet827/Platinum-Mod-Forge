@@ -16,5 +16,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.DEEPSLATE_PLATINUM_ORE.get());
         simpleBlock(ModBlocks.PLATINUM_BLOCK.get());
         simpleBlock(ModBlocks.PLATINUM_ORE.get());
+        simpleBlock(ModBlocks.RAW_PLATINUM_BLOCK.get());
     }
 }

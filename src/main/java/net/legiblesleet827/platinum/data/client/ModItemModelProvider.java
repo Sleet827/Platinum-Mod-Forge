@@ -17,12 +17,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent("deepslate_platinum_ore", modLoc("block/deepslate_platinum_ore"));
         withExistingParent("platinum_block", modLoc("block/platinum_block"));
         withExistingParent("platinum_ore", modLoc("block/platinum_ore"));
+        withExistingParent("raw_platinum_block", modLoc("block/raw_platinum_block"));
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
         ModelFile itemHandheld = getExistingFile(mcLoc("item/handheld"));
 
         builder("platinum_nugget", itemGenerated);
         builder("platinum_ingot", itemGenerated);
+        builder("raw_platinum_nugget", itemGenerated);
+        builder("raw_platinum_ingot", itemGenerated);
         builder("platinum_sword", itemHandheld);
         builder("platinum_shovel", itemHandheld);
         builder("platinum_pickaxe", itemHandheld);

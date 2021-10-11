@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "platinum",
   "ingredients": [
     {
-      "tag": "forge:storage_blocks/platinum"
+      "item": "platinum:raw_platinum_block"
     }
   ],
   "result": {
-    "item": "platinum:platinum_ingot",
+    "item": "platinum:raw_platinum_ingot",
     "count": 9
   }
 }
