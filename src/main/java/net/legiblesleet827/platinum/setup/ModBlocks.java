@@ -31,7 +31,13 @@ public class ModBlocks {
                     .strength(100, 1200)
                     .sound(SoundType.METAL)));
 
-    static void register() {}
+    public static final RegistryObject<Block> RAW_PLATINUM_BLOCK = register("raw_platinum_block", () ->
+            new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(100, 1200)
+                    .sound(SoundType.METAL)));
+
+    static void register() {
+    }
 
     private static <T extends Block> RegistryObject<T> registerNoItem(String name, Supplier<T> block) {
         return Registration.BLOCKS.register(name, block);

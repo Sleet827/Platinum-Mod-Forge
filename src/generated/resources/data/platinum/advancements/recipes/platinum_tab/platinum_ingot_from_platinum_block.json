@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "platinum:platinum_ingot_from_platinum_bloc"
+      "platinum:platinum_ingot_from_platinum_block"
     ]
   },
   "criteria": {
@@ -19,7 +19,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "platinum:platinum_ingot_from_platinum_bloc"
+        "recipe": "platinum:platinum_ingot_from_platinum_block"
       }
     }
   },

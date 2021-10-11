@@ -1,10 +1,9 @@
 {
   "type": "minecraft:smelting",
-  "group": "platinum",
   "ingredient": {
     "item": "platinum:platinum_ore"
   },
-  "result": "platinum:platinum_ingot",
+  "result": "platinum:raw_platinum_nugget",
   "experience": 1.0,
   "cookingtime": 200
 }

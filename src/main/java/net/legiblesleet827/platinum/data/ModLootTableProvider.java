@@ -3,6 +3,7 @@ package net.legiblesleet827.platinum.data;
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
 import net.legiblesleet827.platinum.setup.ModBlocks;
+import net.legiblesleet827.platinum.setup.ModItems;
 import net.legiblesleet827.platinum.setup.Registration;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.loot.BlockLoot;
@@ -43,9 +44,10 @@ public class ModLootTableProvider extends LootTableProvider {
     public static class ModBlockLootTables extends BlockLoot {
         @Override
         protected void addTables() {
-            dropSelf(ModBlocks.DEEPSLATE_PLATINUM_ORE.get());
+            add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get(), (block) -> createOreDrop(block, ModItems.RAW_PLATINUM_NUGGET.get()));
             dropSelf(ModBlocks.PLATINUM_BLOCK.get());
-            dropSelf(ModBlocks.PLATINUM_ORE.get());
+            add(ModBlocks.PLATINUM_ORE.get(), (block) -> createOreDrop(block, ModItems.RAW_PLATINUM_NUGGET.get()));
+            dropSelf(ModBlocks.RAW_PLATINUM_BLOCK.get());
         }
 
         @Override
